@@ -1,0 +1,132 @@
+:root {
+   --row: row;
+   --raj: Rajdhani;
+   --bona: Bona Nova SC;
+   --white: hsl(0, 100%, 1000%);
+}
+
+* {
+   padding: 0%;
+   margin: 0%;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+
+nav {
+   background-color: black;
+   padding: 20px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+nav p {
+   color: white;
+   font-family: var(--bona);
+   font-size: 1.7rem;
+   text-align: center;
+   width: 100%;
+}
+.section1 {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-between;
+   gap: 50px;
+   align-items: flex-start;
+}
+
+.section {
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+}
+
+.section .task {
+   font-size: 2.5rem;
+   font-weight: 900;
+   font-family: var(--raj);
+}
+
+.section .real {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   margin-top: 30px;
+}
+
+.real p {
+   font-size: 1.4rem;
+   font-weight: 600;
+   color: #424242;
+}
+
+.goals {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 30px;
+}
+
+.goals h3 {
+   font-size: 1.8rem;
+   font-family: var(--raj);
+   font-weight: 900;
+}
+
+.goals p {
+   font-size: 1.1rem;
+}
+
+footer {
+   height: 120px;
+   background-color: black;
+   padding: 30px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+footer .links {
+   width: 50%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-self: center;
+}
+footer a {
+   text-decoration: underline;
+   color: white;
+   font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+   footer .links {
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      min-width: 100%;
+   }
+   .section1 {
+      flex-direction: column-reverse;
+   }
+   .section {
+      width: 100%;
+      padding: 10px 30px;
+   }
+   img {
+      padding: 10px;
+      width: 100%;
+   }
+
+   .real p {
+      font-size: 1.2rem;
+   }
+}
