@@ -1,7 +1,7 @@
 :root {
    --row: row;
-   --raj: Rajdhani;
-   --bona: Bona Nova SC;
+   --raj: serif;
+   --bona: serif;
    --white: hsl(0, 100%, 1000%);
 }
 
